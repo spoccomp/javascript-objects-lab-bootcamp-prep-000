@@ -16,7 +16,7 @@ function deleteFromObjectByKey(object, key){
   //does not modify the original object (it is non-destructive)
   //var newObj = destructivelyDeleteFromObjectByKey(object, key);
   //return newObj;
-  return Object.assign({}, object, key);
+  var = Object.assign({}, object, key);
 }
 function destructivelyDeleteFromObjectByKey(object, key){
   //returns object without the delete key/value pair:
