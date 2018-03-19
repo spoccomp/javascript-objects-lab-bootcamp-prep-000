@@ -15,11 +15,11 @@ function deleteFromObjectByKey(object, key){
   //deletes `key` from a clone of object and returns the new object (it is non-destructive)
   //does not modify the original object (it is non-destructive)
   var newObj = destructivelyDeleteFromObjectByKey(object, key);
-  //var newObj = Object.assign({}, object, key);
   return newObj;
 }
 function destructivelyDeleteFromObjectByKey(object, key){
   //returns object without the delete key/value pair:
   // modifies the original object
-  return object[key];
+  var newObj = destructivelyDeleteFromObjectByKey(obj, key);
+  return newObj;
 }
